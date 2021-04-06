@@ -1,0 +1,19 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(221, 197, 90);
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-BoldItalic.ttf") format("ttf"); // adapter l'url en fonction du nom de votre fichier
+}
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  &:fullscreen {
+	background-color: pink; // propriété CSS peu supportée par les navigateurs qui devrait être auto-préfixée en mode production
+  }
+  h1 {
+    font-size: 2rem;
+    background: url('../images/loletie.jpg');
+    padding: 50px;
+  }
+}
